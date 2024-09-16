@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="Arvin Enkhbold's portfolio showcasing business and data analysis projects">
+                <title>Arvin Enkhbold - Business & Data Analyst Portfolio</title>
+                <script src="https://cdn.tailwindcss.com"></script>
+                <script>
+                    tailwind.config = {
+                        theme: {
+                            extend: {
+                                colors: {
+                                    background: '#1e2638',
+                                    foreground: '#ffffff',
+                                    primary: '#3a5a78',
+                                    secondary: '#2c3649',
+                                    accent: '#4a90e2',
+                                    muted: '#6c7a94',
+                                },
+                                fontFamily: {
+                                    sans: ['Arial', 'sans-serif'],
+                                },
+                            }
+                        }
+                    }
+                </script>
+                <link rel="icon" href="favicon.ico" type="image/x-icon">
+                <link href="/path/to/your/style.css" rel="stylesheet">
+                <link href="/path/to/your/global.css" rel="stylesheet">
+                <style>
+                    .header-container {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 1rem;
+                    }
+                    .header-left {
+                        flex: 1;
+                    }
+                    .header-center {
+                        flex: 1;
+                        text-align: center;
+                    }
+                    .header-right {
+                        flex: 1;
+                        text-align: right;
+                    }
+                    .social-icons {
+                        display: flex;
+                        justify-content: center;
+                        gap: 1rem;
+                        margin-top: 0.5rem;
+                    }
+                    .social-icons svg {
+                        width: 24px;
+                        height: 24px;
+                    }
+                </style>
+            </head>
+            <body class="bg-background text-foreground">
+                <header class="bg-background py-8 px-4 sticky top-0 z-50 shadow-md">
+                    <div class="container mx-auto flex justify-between items-center">
+                        <div class="flex-1">
+                            <a href="index.html" class="text-3xl font-bold text-foreground hover:text-accent">Arvin Enkhbold</a>
+                        </div>
+                        <div class="flex-1 text-center">
+                            <p class="text-xl">Aspiring Analyst</p>
+                            <div class="social-icons flex justify-center space-x-4 mt-2">
+                                <a href="https://www.linkedin.com/in/arvin-enkhbold" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-foreground hover:text-accent">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                        <rect width="4" height="12" x="2" y="9" />
+                                        <circle cx="4" cy="4" r="2" />
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/arvinenkhbold?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="text-foreground hover:text-accent">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                    </svg>
+                                </a>
+                                <a href="https://x.com/ArvinEnkhbold" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="text-foreground hover:text-accent">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                                        <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                                    </svg>
+                                </a>
+                                <a href="https://www.strava.com/athletes/arvin_enkhbold" target="_blank" rel="noopener noreferrer" aria-label="Strava" class="text-foreground hover:text-accent">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex-1 text-right">
+                            <nav>
+                                <ul class="flex justify-end space-x-4">
+                                    <li><a href="index.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Home</a></li>
+                                    <li><a href="resume.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Resume</a></li>
+                                    <li><a href="projects.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Projects</a></li>
+                                    <li><a href="blog.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Blog</a></li>
+                                    <li><a href="contact.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+    <main class="container mx-auto px-4 py-8">
+        <div class="bg-secondary p-8 rounded-lg shadow-lg">
+            <div class="flex flex-col md:flex-row justify-between items-start mb-8">
+                <div>
+                    <h1 class="text-4xl font-bold mb-2">Arvin Enkhbold</h1>
+                    <p class="text-xl text-accent">Aspiring Analyst</p>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <p>arvinenkhbold6@gmail.com</p>
+                    <p>Alameda, CA</p>
+                </div>
+            </div>
+
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-accent">Summary</h2>
+                <p>I am an aspiring business and data analyst with a strong foundation in finance, driven by a passion for utilizing data to help decision making. As a recent graduate of the University of California, Riverside, holding a Bachelor of Science in Business Administration, I have developed my skills in data analysis, financial planning, and emerging technology tools in the business industry. My expertise includes proficiency in Python for data manipulation and Tableau for crafting compelling data visualizations. I have experience in market analysis, investment strategies, and identifying financial trends, all of which contribute to my ability to make informed data-driven decisions and improve business processes. I am committed to continuous learning, particularly in the evolving field of Artificial Intelligence, and I am eager to apply my analytical skills to solve complex business challenges. I am seeking new opportunities to bring my technical skills and knowledge to an organization where I can contribute effective analysis into actionable insights.</p>
+            </section>
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-accent">Education</h2>
+                <div class="mb-4">
+                    <h3 class="text-xl font-semibold">University of California, Riverside (2020-2023)</h3>
+                    <p>Bachelor of Science, Business Administration (Information Systems)</p>
+                    <p>GPA: 3.73/4.00; Major GPA: 3.84/4.00</p>
+                    <p>Honors: Magna Cum Laude, Chanchellor's List, Dean's List 6x</p>
+                    <p>Relevant Coursework: Business Analyst Mentorship; Systems Analysis and Design; Data Mining and Visual
+                    Analytics; Electronic Commerce; Financial Evaluation and Managerial Analysis; Technology Entrepreneurship;
+                    Designing and Leading Teams; Digital Marketing; Competitive and Strategic Analysis</p>
+                </div>
+            </section>
+
+            <!-- New Diploma Section -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-accent">Diploma</h2>
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 mb-4 md:mb-0 md:pr-4">
+                        <img src="images/Diploma_page-0001.jpg" alt="University of California, Riverside Diploma" class="w-full h-auto rounded-lg shadow-lg">
+                    </div>
+                    <div class="md:w-1/2 md:pl-4 flex flex-col justify-center">
+                        <p class="text-lg mb-4 font-bold underline text-center">University of California, Riverside (2020-2023)</p>
+                        <p class="text-lg mb-2 text-center">Bachelor of Science, Business Administration ~ Information Systems</p>
+                        <p class="text-lg mb-2 text-center">GPA: 3.71/4.00; Major GPA: 3.84/4.00</p>
+                        <p class="text-lg mb-2 text-center">Honors: Magna Cum Laude, Chanchellor's List, Dean's List 6x</p>
+                        <p class="text-lg text-center">Graduated: September 2023</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-accent">Experience</h2>
+                <div class="mb-4">
+                    <h3 class="text-xl font-semibold">Sales Associate</h3>
+                    <p>Big 5 Sporting Goods, June 2020 ~ February 2021</p>
+                    <ul class="list-disc list-inside mt-2">
+                        <li>Operated cash registers, managed financial transactions, and balanced drawers while reporting all information to the in-store manager.</li>
+                        <li>Complied with federal and state laws by requesting any personal identification when regarding high-risk products such as ammunition, firearms, and knives</li>
+                        <li>Ensured maximum client satisfaction by providing exceptional and personalized service, enhancing an enjoyable shopping experience for all customers.</li>
+                    </ul>
+            </section> 
+            <div class="mb-8"></div> <section class="mb-8"> 
+                <div class="mb-4">
+                    <h3 class="text-xl font-semibold">Server</h3>
+                    <p>Burma Superstar, May 2021 ~ December 2022</p>
+                    <ul class="list-disc list-inside mt-2">
+                        <li>Managed financial transactions by collecting total charges, issuing bills, accepting payments, and returning payment back to the patron</li>
+                        <li>Completed end-of-sales reports which tracked daily revenue, number of customers, as well as tips to close out the shift</li>
+                        <li>Collaborated effectively with other front-of-house team members and kitchen to ensure patrons recieve waht they ordered</li>
+                    </ul>
+                </div>
+                </section>
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold mb-4 text-accent">Skills</h2>
+                    <ul class="list-disc list-inside">
+                        <li>Data Analysis (Python, R)</li>
+                        <li>Data Visualization (Tableau, Power BI)</li>
+                        <li>Microsoft Office (Excel, PowerBI, Powerpoint)</li>
+                        <li>Software Composer (HTML, Javascript, CSS)</li>
+                        <li>Adobe (Illustrator, Photoshop)</li>
+                        <li>SQL</li>
+                     </ul>
+                </section>
+            <section>
+                <h2 class="text-2xl font-bold mb-4 text-accent">Projects</h2>
+                <div class="mb-4">
+                    <h3 class="text-xl font-semibold">
+                        <a href="projects.html" class="font-bold text-foreground hover:text-accent hover: underline">*SEE PROJECTS TAB*</a>
+                    </h3>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-background text-center py-4">
+        <p class="text-muted">&copy; 2024 Arvin Enkhbold. All rights reserved.</p>
+        <div class="mt-2 space-x-2">
+            <a href="#" aria-label="LinkedIn" class="text-foreground hover:text-accent"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="GitHub" class="text-foreground hover:text-accent"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,613 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Arvin Enkhbold's portfolio showcasing business and data analysis projects">
+        <title>Arvin Enkhbold - Business & Data Analyst Portfolio</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            background: '#1e2638',
+                            foreground: '#ffffff',
+                            primary: '#3a5a78',
+                            secondary: '#2c3649',
+                            accent: '#4a90e2',
+                            muted: '#6c7a94',
+                        },
+                        fontFamily: {
+                            sans: ['Arial', 'sans-serif'],
+                        },
+                    }
+                }
+            }
+        </script>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link href="/path/to/your/style.css" rel="stylesheet">
+        <link href="/path/to/your/global.css" rel="stylesheet">
+        <style>
+            .header-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem;
+            }
+            .header-left {
+                flex: 1;
+            }
+            .header-center {
+                flex: 1;
+                text-align: center;
+            }
+            .header-right {
+                flex: 1;
+                text-align: right;
+            }
+            .social-icons {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                margin-top: 0.5rem;
+            }
+            .social-icons svg {
+                width: 24px;
+                height: 24px;
+            }
+        </style>
+    </head>
+    <body class="bg-background text-foreground">
+        <header class="bg-background py-8 px-4 sticky top-0 z-50 shadow-md">
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="flex-1">
+                    <a href="index.html" class="text-3xl font-bold text-foreground hover:text-accent">Arvin Enkhbold</a>
+                </div>
+                <div class="flex-1 text-center">
+                    <p class="text-xl">Aspiring Analyst</p>
+                    <div class="social-icons flex justify-center space-x-4 mt-2">
+                        <a href="https://www.linkedin.com/in/arvin-enkhbold" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-foreground hover:text-accent">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect width="4" height="12" x="2" y="9" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/arvinenkhbold?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="text-foreground hover:text-accent">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </a>
+                        <a href="https://x.com/ArvinEnkhbold" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="text-foreground hover:text-accent">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                                <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                            </svg>
+                        </a>
+                        <a href="https://www.strava.com/athletes/arvin_enkhbold" target="_blank" rel="noopener noreferrer" aria-label="Strava" class="text-foreground hover:text-accent">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-1 text-right">
+                    <nav>
+                        <ul class="flex justify-end space-x-4">
+                            <li><a href="index.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Home</a></li>
+                            <li><a href="resume.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Resume</a></li>
+                            <li><a href="projects.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Projects</a></li>
+                            <li><a href="blog.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Blog</a></li>
+                            <li><a href="contact.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </body>
+</html>
+    <main class="container mx-auto px-4 py-8">
+        <section id="about" class="mb-16">
+            <h2 class="text-2xl font-bold mb-4 text-white text-center">About Me</h2>
+            <div class="flex flex-col md:flex-row bg-secondary p-6 rounded-lg">
+                <div class="md:w-1/3 mb-4 md:mb-0 md:mr-6">
+                    <img src="images\3B17AF9F-14AA-49A6-90FA-143D768FE7BA.jpeg" alt="Arvin Enkhbold" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="md:w-2/3 flex flex-col justify-center">
+                    <p class="text-white mb-4">Hi, I'm Arvin. I'm an aspiring data and business analyst, and a proud graduate of the University of California, Riverside. I have a true passion for finance, investment banking, and making data-driven decisions. I firmly believe that every solution can be enhanced through the power of data, which has led me on an exciting journey of analyzing all sorts and continuously working to improve my skills.</p>
+                    <p class="text-white mb-4">My technical toolkit includes Python for data manipulation and analysis, Excel skills for financial modeling, and Tableau for creating compelling data visualizations. While some may view data as complex and intimidating, I'm on a mission to bridge that gap. I'm proficient in the full data analysis pipeline - from data cleaning and preprocessing to exploratory analysis and visualization. My goal is to transform raw data into meaningful insights that drive strategic business decisions.</p>
+                    <p class="text-white mb-4">Beyond my professional pursuits, I maintain a daily investing and trading blog where I discuss current trends and ideas in the finance industry. I love diving deep into market analysis, sharing investment strategies, and exploring the latest fintech innovations. Whether I'm building a predictive model, crafting a dashboard, or analyzing market trends, I approach each project with enthusiasm and a commitment to excellence. I'm always eager to take on new challenges and push the boundaries of what's possible with data.</p>
+                    <p class="text-white">Be sure to check out my <a href="#" class="text-accent hover:underline">latest blog post</a> where I break down recent trends and discuss intraday movements in the market. Let's connect—I'm always eager to meet new people and love picking the brains of others!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="mb-16">
+            <h2 class="text-2xl font-bold mb-8 text-white text-center">What I Do</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-secondary p-6 rounded-lg">
+                    <div class="text-accent mb-4 flex justify-center">
+                        <!-- Data Analysis icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white text-center">Data Analysis</h3>
+                    <p class="text-white text-center">While my journey began with a passion for finance, I've grown to deeply appreciate the art and science of business and data analysis. I'm dedicated to uncovering actionable insights from complex datasets and optimizing business processes to drive strategic decisions. Data cleaning, analysis, and visualization are where my skills shine, and I strive to deliver clear, impactful solutions. Check out my recent projects showcasing how data can transform business outcomes.</p>
+                </div>
+
+                <div class="bg-secondary p-6 rounded-lg">
+                    <div class="text-accent mb-4 flex justify-center">
+                        <!-- Financial Analysis icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white text-center">Financial Analysis</h3>
+                    <p class="text-white text-center">Finance remains at the core of my interests, where I explore market trends, evaluate investment opportunities, and apply data-driven methods to maximize returns. Whether it's through developing financial models or conducting in-depth market analysis, I bring a rigorous, analytical approach to every financial challenge. My daily investing and trading blog reflects my ongoing exploration of the financial world and my commitment to continuous learning.</p>
+                </div>
+
+                <div class="bg-secondary p-6 rounded-lg">
+                    <div class="text-accent mb-4 flex justify-center">
+                        <!-- Process Improvement icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white text-center">Process Improvement</h3>
+                    <p class="text-white text-center">In today's rapidly evolving business landscape, efficiency and optimization are more critical than ever. I'm passionate about analyzing business processes, identifying inefficiencies, and implementing AI-driven solutions to streamline operations. By leveraging data, machine learning models, and AI tools, I help businesses not only improve current workflows but also predict and adapt to future challenges. My approach combines strategic thinking with cutting-edge AI technology to deliver sustainable improvements and drive long-term success.</p>
+                </div>
+
+                <div class="bg-secondary p-6 rounded-lg">
+                    <div class="text-accent mb-4 flex justify-center">
+                        <!-- Continuous Learning icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white text-center">Continuous Learning</h3>
+                    <p class="text-white text-center">At the end of the day, working with large datasets in a business environment is more than just a job—it's a true passion. I have a driving force to create impactful solutions using data, constantly exploring new ways to turn information into actionable insights. My curiosity pushes me to keep learning, experimenting, and innovating. Be sure to check back regularly for updates on my latest projects and discoveries!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-16">
+            <h2 class="text-2xl font-bold mb-8 text-white text-center">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-secondary p-6 rounded-lg transition-transform duration-300 hover:scale-105 cursor-pointer" onclick="toggleProject('project1')">
+                    <img src="images/Web-Page-SC.jpeg" alt="Personal Portfolio Website" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2 text-white text-center">Personal Portfolio Website</h3>
+                    <p class="text-white mb-4">Designed and developed my first responsive web application using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="bg-secondary p-6 rounded-lg transition-transform duration-300 hover:scale-105 cursor-pointer" onclick="toggleProject('project2')">
+                    <img src="images/Customer-churn-thumbnail.png" alt="Data Analysis" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2 text-white text-center">Customer Churn Data Analysis</h3>
+                    <p class="text-white mb-4">In this data analysis project, I analyzed internal customer data to identify key factors influencing churn at a telecommunications company. Using Python for data preprocessing, exploratory data analysis (EDA), and visualizations, I identified key variables driving churn and developed strategies to improve customer retention.</p>
+                </div>
+                <div class="bg-secondary p-6 rounded-lg transition-transform duration-300 hover:scale-105 cursor-pointer" onclick="toggleProject('project3')">
+                    <img src="path/to/project3-image.jpg" alt="Data Analysis Project" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2 text-white text-center">Data Analysis Project</h3>
+                    <p class="text-white mb-4">A comprehensive analysis of market trends using Python and Pandas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Blog" class="mb-16">
+            <h2 class="text-2xl font-bold mb-8 text-white text-center">Featured Blog Posts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-secondary p-6 rounded-lg transition-transform duration-300 hover:scale-105 cursor-pointer" onclick="openBlogPost(0)">
+                    <img src="images/spy-09-06-24.png" alt="Blog Post 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2 text-white text-center">$SPY $GME $PLTR</h3>
+                    <p class="text-white mb-4">Today's trading session was marked by high volatility as the market digested critical economic data, including the non-farm payroll numbers ahead of the much-anticipated Federal Open Market Committee (FOMC) meeting on September 18th-19th.</p>
+                </div>
+                <div class="bg-secondary p-6 rounded-lg transition-transform duration-300 hover:scale-105 cursor-pointer" onclick="openBlogPost(1)">
+                    <img src="path/to/blog2-image.jpg" alt="Blog Post 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2 text-white text-center">Blog Post 2</h3>
+                    <p class="text-white mb-4">Brief excerpt of the second blog post. This provides a quick overview of the content.</p>
+                </div>
+                <div class="bg-secondary p-6 rounded-lg transition-transform duration-300 hover:scale-105 cursor-pointer" onclick="openBlogPost(2)">
+                    <img src="path/to/blog3-image.jpg" alt="Blog Post 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2 text-white text-center">Blog Post 3</h3>
+                    <p class="text-white mb-4">Brief excerpt of the third blog post. This provides a quick overview of the content.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Details Overlay -->
+        <div id="project-overlay" class="fixed inset-0 bg-background bg-opacity-90 z-50 hidden overflow-y-auto">
+            <div class="container mx-auto px-4 py-8">
+                <div id="project-details" class="bg-secondary p-8 rounded-lg shadow-lg relative max-w-4xl mx-auto">
+                    <button onclick="closeProject()" class="absolute top-4 right-4 text-white hover:text-accent">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                    <!-- Project content will be inserted here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Post Overlay -->
+        <div id="blog-overlay" class="fixed inset-0 bg-background bg-opacity-90 z-50 hidden overflow-y-auto">
+            <div class="container mx-auto px-4 py-8">
+                <div id="blog-details" class="bg-secondary p-8 rounded-lg shadow-lg relative max-w-4xl mx-auto">
+                    <button onclick="closeBlogPost()" class="absolute top-4 right-4 text-white hover:text-accent">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                    <!-- Blog post content will be inserted here -->
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Project data
+            const projects = [
+                {
+                    id: 'project1',
+                    title: "Personal Portfolio Website",
+                    images: ["images/Web-Page-SC.jpeg", "images/code.jpeg", "images/portfolio-image3.jpg"],
+                    summary: "Designed and developed my first responsive web application using HTML, CSS, and JavaScript.",
+                    details: `
+                        <p class="mb-4">This personal portfolio website was my first attempt into web development. Overall, I am pretty happy with how it turned out especially with the formatting and the different functionalities, considering that I am new to coding. However, there could be major improvements to be made in the future and I will continue to learn and develop my skills to adress any shortcomings. In this project, here are some of the key accomplishments: :</p>
+                        
+                        <ul class="list-disc list-inside mb-4">
+    <li>Structured content using HTML5</li>
+    <li>Styled the website using CSS and Tailwind for a responsive design</li>
+  <li>Implemented interactive elements with JavaScript, including:
+    <ul class="list-disc list-inside ml-6 space-y-0" style="margin-top: -0.25rem;">
+        <li>Dynamic and interactive project and blog displays, where it pops up an overlay with details once user clicks</li>
+        <li>Image carousels for project and blog post details, that allowed for multiple images to be shown</li>    
+    </ul>
+</li>
+    <li>Utilized external services like Google Maps for an interactive location display</li>
+    <li>Included clickable SVG icons for social media links that redirect user to an external site</li>
+    <li>Structured the site with multiple HTML pages (Home, Projects, Blog, Resume, Contact)</li>
+                        </ul>
+                        
+                          <h3 class="text-xl font-bold mb-2">Biggest Challenges:</h3>
+
+                        <p> As someone that is a total beginner to coding, diving into web development was both exciting and challenging. One of the biggest hurdles that I encountered was navigating the complexities of coding, especially in the beginning stages of setting up my environment. To help me with my development, I utilized Cursor as my IDE, which integrates an AI assistant to aid in any processes and actually teach me on why every single line of code is being implemented. Learning to use such a powerful application like Cursor is a game-changer. Not only does it break down the barriers of entry into coding for a beginners but it also allows for rapid development of websites, applications, and new software. The usability and efficiency of Cursor enabled me to overcome any hurdles, making it a revolutionary tool in the developer space. Although sometimes the application would hallucinate and not be helpful at times, I learned to be determined and effectively communicate on what I want the website to do. I am really looking frward to utilizing this technology more and ultimately bringing some of my ideas into fruition. This experience truly taught me how rapid technology is moving and how it is disrupting and creating different industries with a simple, but innovative tool.</p>
+                         </ul>
+                         
+                         <h3 class="text-xl font-bold mb-2">Future Improvements:</h3>
+                        <p>While my website is functional and servesw its purpose, I understand there can be many improvements in the future, and it is far from perfect. One of my first thigns I would be is to use a backend database, such as a content management system, to ease the process of adding blog posts. Currently, I have to hardcode any new content directly into the site, which, while functional, is not the most efficient. Another significant area for improvement is the User Interface and overall design. The site currently has a dark and bland aesthetic, and I plan to enhance it by incorporating animations, experimenting with different color themes, and refining the fonts to make it more appealing. Additionally, I am working on improving the Mobile interface, as some sections, like the header tabs, are cut off when accessed on a phone. While these may seem like simple improvements, they can have a drastic impact on the user experience. The advantage of coding the site myself, rather than using a site generator, is that it allows for ongoing customization and improvements. As I continue to develop my skills in web development, I am confident that my design and UI principles will evolve and gradually improve over time. </p>
+                    `
+                },
+                {
+                    id: 'project2',
+                    title: "Customer Churn Data Analysis",
+                    category: "analysis",
+                    images: ["images/Customer-churn-thumbnail.png", "images/10 factors correlated with churn.png", "images/Churngithub.jpeg", "images/ChurnPP.jpeg", "images/leading-causes-of-customer-churn-1.webp"],
+                    summary: "In this data analysis project, I analyzed internal customer data to identify key factors influencing churn at a telecommunications company. Using Python for data preprocessing, exploratory data analysis (EDA), and visualizations, I identified key variables driving churn and developed strategies to improve customer retention.",
+                    details: `
+                          <p class="mb-4">In today's highly competitive telecommunications industry, customer retention is more important than ever. Companies are increasingly challenged to maintain their customer base while simultaneously attracting new ones. Despite the efforts of companies, customer churn – where customers leave a provider for another – remains a significant issue that must be addressed. This loss in customers not only affects the immediate revenue of the company, but it also increases the cost of customer acquisition, as different departments must allocate additional resources to replace these lost customers.</p>
+
+                          <p class="mb-4">Customer churn particularly affects industries like telecommunications the most, as customers don't have options for numerous service offerings, which lead them to be highly sensitive to pricing, quality, and support. Retaining existing customers is much more cost-effective than acquiring a new one, making churn reduction a top priority and an important factor in the success of the business. However, many companies across a variety of industries struggle to identify the key factors that drive customers to leave, which is essential for developing effective retention strategies.</p>
+
+                          <p class="mb-4">To address this challenge, Teleco will look into their internal data to predict and manage customer churn. By analyzing this dataset which includes customer demographics, service usage patterns, and billing information, Telco can identify trends and patterns that will represent a  higher likelihood of churn. These insights will better inform our key stakeholders in their decision making to explore different strategies such as, offering targeted promotions or improving service quality, to retain customers who are at risk of leaving.</p>
+
+                          <h3 class="text-xl font-bold mb-2">Deliverables:</h3>
+                      <ul class="list-disc list-inside mb-4">
+                          <li>Python code and visualizations: <a href="https://github.com/arvinenkhbold/Telco-Customer-Churn-Project" target="_blank" class="text-accent hover:underline">View Project Overview/Code</a><br></li>
+                          <li>Detailed analysis report: <a href="https://docs.google.com/document/d/1lmg9bzFqzgwDnIv7HMhHRuL5lND4CtaJoRXlmtWmae4/edit?usp=sharing" target="_blank" class="text-accent hover:underline">View Report</a><br></li>
+                          <li>Presentation for stakeholders: <a href="https://docs.google.com/presentation/d/1LOeq93qVwTSpHW84qBq5JeKzkFNPlfEiixWXA6TTDc0/edit?usp=sharing" target="_blank" class="text-accent hover:underline">View Presentation</a></li>
+                      </ul>
+
+                        <h3 class="text-xl font-bold mb-2">Project Highlights:</h3>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>Conducted data preprocessing and EDA thorugh Python</li>
+                            <li>Created visualizations such as scatter plots, correlation matrix, and segments to highlight relationships between variables</li>
+                            <li>Utilized basic K-means clustering for customer segmentation</li>
+                            <li>Identified key variables that are driving customer churn</li>
+                            <li>Developed strategic recommendations to reduce churn</li>
+                        </ul>
+
+                        <h3 class="text-xl font-bold mb-2">Key Findings and Analysis Results:</h3>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>Contract length significantly impacts churn rates</li>
+                            <li>Higher monthly charges correlate with increased churn</li>
+                            <li>Fiber optic internet users are more prone to churn</li>
+                            <li>Payment methods influence customer retention</li>
+                            <li>Longer customer tenure is associated with lower churn rates</li>
+                        </ul>
+
+                        <h3 class="text-xl font-bold mb-2">Future Improvements:</h3>
+
+                        <p>Reflecting back, there would be several improvements for future for analysis. I would first explore more advanced predictive models such as Random Forests or even a more advanced k-means clustering method, which could produce more accurate and tailored churn predictions. As far as visualizations, I would develop an interactive dashboard using tools like Tableau or Power BI that would allow stakeholders to explore the data and insights in a more dynamic matter. Lastly, a huge part of being an analyst is being a good storyteller and effectively engaging stakeholders with insights found within the data. As these stakeholders often get bored or don't understand such things like data, having appealing and easy to read visualizations (Such as the example image provided above) will help keep their attention and make sure key insights are effectively communicated. By improving my skills in these areas, I hope to create more meaningful and insightful analysis.</p>
+                    `
+                },
+                {
+                    id: 'project3',
+                    title: "Data Analysis Project",
+                    images: ["images/data-analysis-image1.jpg", "images/data-analysis-image2.jpg", "images/data-analysis-image3.jpg"],
+                    summary: "A comprehensive analysis of market trends using Python and Pandas.",
+                    details: `
+                        <p class="mb-4">This project involved analyzing market trends and making data-driven recommendations. Here's what I did:</p>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>Collected and cleaned data using Python and Pandas</li>
+                            <li>Conducted exploratory data analysis</li>
+                            <li>Created visualizations using Matplotlib and Seaborn</li>
+                            <li>Developed predictive models using machine learning algorithms</li>
+                        </ul>
+                        <p>The biggest challenge I faced was...</p>
+                        <p>In the future, I plan to enhance this project by...</p>
+                    `
+                }
+            ];
+
+            // Blog post data
+            const blogPosts = [
+                {
+                    title: "$SPY $GME $PLTR",
+                    date: "September 06, 2024",
+                    images: ["images/spy-09-06-24.png", "images/roaring-kitty.jpeg", "images/karp.jpeg"],
+                    excerpt: "Today's trading session was marked by high volatility as the market digested critical economic data...",
+                    content: `
+                        <p>Today's trading session was marked by high volatility as the market digested critical economic data, including the non-farm payroll numbers ahead of the much-anticipated Federal Open Market Committee (FOMC) meeting on September 18th-19th. The data revealed that the U.S. economy added 142,000 jobs in August, falling short of the expected 161,000. This weaker-than-expected job growth heightened fears of an economic slowdown, prompting speculation about potential interest rate cuts ranging from 25 to 75 basis points.</p>
+
+                        <h3 class="text-xl font-bold mt-4 mb-2">$SPY: Market Under Pressure</h3>
+                        <p>The SPDR S&P 500 ETF ($SPY), a benchmark for the overall market, started the day with an initial pop at 5:30 AM PST, reflecting early optimism. However, this quickly faded as the market opened, leading to a sharp sell-off. By the end of the trading day, $SPY had dropped $9.25, closing significantly lower as investor concerns about economic growth and the Fed decision took center stage. I believe that we will continue to have a volatile market till the decision comes out. Septemeber truly is bear season.</p>
+
+                        <h3 class="text-xl font-bold mt-4 mb-2">$GME: GameStop's Pop Upon Kitty Tweet</h3>
+                        <p>GameStop ($GME), the OG meme stock, defied the broader market trend with a rally. Despite the general downturn in the market, $GME managed to post gains, as investors speculated that Roaring Kitty might be back from his hiding. This rally comes ahead of the company's quarterly earnings release on September 10th, 2024, with an estimated move of (+/-) 23.59%. The company's substantial cash reserves and potential shift from meme stock status to a more traditional investment under the leadership of Ryan Cohen have fueled this. With the upcoming earnings report, all eyes will be on $GME to see if it can continue its upward momentum.</p>
+
+                        <h3 class="text-xl font-bold mt-4 mb-2">$PLTR: Huge day day for Palantir and Alex Karp</h3>
+                        <p>Palantir Technologies ($PLTR), one of my favorite companies, had an eventful day. Having been an investor since 2021, I've watched the company grow, fall, and grow again, establishing themselves as a leader in artificial intelligence with real, tangible use cases for major corporations. Today, $PLTR achieved a significant milestone: approval for inclusion in the S&P 500. This long-awaited recognition followed five straight quarters of GAAP profitability and increasing institutional ownership. The announcement led to a after-market pop in $PLTR's stock price. We will see if that pop is sustained or will it cause institutional selloff similar to what we seen with $SMCI.</p>
+                    `
+                },
+                {
+                    title: "Blog Post 2",
+                    date: "September 05, 2024",
+                    images: ["images/blog2-image1.jpg", "images/blog2-image2.jpg", "images/blog2-image3.jpg"],
+                    excerpt: "Brief excerpt of the second blog post. This provides a quick overview of the content.",
+                    content: `
+                        <p>Detailed content of the second blog post...</p>
+                        <!-- ... (rest of the content) ... -->
+                    `
+                },
+                {
+                    title: "Blog Post 3",
+                    date: "September 04, 2024",
+                    images: ["images/blog3-image1.jpg", "images/blog3-image2.jpg", "images/blog3-image3.jpg"],
+                    excerpt: "Brief excerpt of the third blog post. This provides a quick overview of the content.",
+                    content: `
+                        <p>Detailed content of the third blog post...</p>
+                        <!-- ... (rest of the content) ... -->
+                    `
+                }
+            ];
+
+            let currentProjectImageIndex = 0;
+            let currentBlogImageIndex = 0;
+            let currentProjectId = '';
+            let currentBlogId = '';
+
+            function toggleProject(projectId) {
+                const projectOverlay = document.getElementById('project-overlay');
+                const projectDetails = document.getElementById('project-details');
+                const project = projects.find(p => p.id === projectId);
+                currentProjectImageIndex = 0;
+                currentProjectId = projectId;
+
+                projectDetails.innerHTML = `
+                    <h2 class="text-2xl font-bold mb-4">${project.title}</h2>
+                    <div class="relative mb-4">
+                        <div id="projectImageCarousel" class="flex items-center justify-center h-96 rounded-lg overflow-hidden">
+                            <img src="${project.images[currentProjectImageIndex]}" alt="${project.title}" class="max-w-full max-h-full object-contain">
+                        </div>
+                        ${project.images.length > 1 ? `
+                            <button onclick="changeProjectImage(-1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-r">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </button>
+                            <button onclick="changeProjectImage(1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-l">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        ` : ''}
+                    </div>
+                    <div class="mb-4">${project.details}</div>
+                    <button onclick="closeProject()" class="mt-4 bg-accent text-foreground px-4 py-2 rounded-lg hover:bg-primary">Back to Projects</button>
+                `;
+
+                projectOverlay.classList.remove('hidden');
+            }
+
+            function openBlogPost(index) {
+                const blogOverlay = document.getElementById('blog-overlay');
+                const blogDetails = document.getElementById('blog-details');
+                const post = blogPosts[index];
+                currentBlogImageIndex = 0;
+                currentBlogId = index;
+
+                blogDetails.innerHTML = `
+                    <h2 class="text-2xl font-bold mb-4">${post.title}</h2>
+                    <div class="relative mb-4">
+                        <div id="blogImageCarousel" class="flex items-center justify-center h-96 rounded-lg overflow-hidden">
+                            <img src="${post.images[currentBlogImageIndex]}" alt="${post.title}" class="max-w-full max-h-full object-contain">
+                        </div>
+                        ${post.images.length > 1 ? `
+                            <button onclick="changeBlogImage(-1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-r">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </button>
+                            <button onclick="changeBlogImage(1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-l">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        ` : ''}
+                    </div>
+                    <p class="text-muted mb-2">Published on ${post.date}</p>
+                    <div class="mb-4">${post.content}</div>
+                    <button onclick="closeBlogPost()" class="mt-4 bg-accent text-foreground px-4 py-2 rounded-lg hover:bg-primary">Back to Blog</button>
+                `;
+
+                blogOverlay.classList.remove('hidden');
+            }
+
+            function changeProjectImage(direction) {
+                const project = projects.find(p => p.id === currentProjectId);
+                currentProjectImageIndex += direction;
+                if (currentProjectImageIndex < 0) currentProjectImageIndex = project.images.length - 1;
+                if (currentProjectImageIndex >= project.images.length) currentProjectImageIndex = 0;
+
+                const imageCarousel = document.getElementById('projectImageCarousel');
+                imageCarousel.innerHTML = `
+                    <img src="${project.images[currentProjectImageIndex]}" alt="${project.title}" class="max-w-full max-h-full object-contain">
+                `;
+            }
+
+            function changeBlogImage(direction) {
+                const post = blogPosts[currentBlogId];
+                currentBlogImageIndex += direction;
+                if (currentBlogImageIndex < 0) currentBlogImageIndex = post.images.length - 1;
+                if (currentBlogImageIndex >= post.images.length) currentBlogImageIndex = 0;
+
+                const imageCarousel = document.getElementById('blogImageCarousel');
+                imageCarousel.innerHTML = `
+                    <img src="${post.images[currentBlogImageIndex]}" alt="${post.title}" class="max-w-full max-h-full object-contain">
+                `;
+            }
+
+            function closeProject() {
+                document.getElementById('project-overlay').classList.add('hidden');
+            }
+
+            function closeBlogPost() {
+                document.getElementById('blog-overlay').classList.add('hidden');
+            }
+        </script>
+    </main>
+</body>
+</html>
+        <script>
+            let currentItemId = '';
+            function toggleProject(projectId) {
+                const projectOverlay = document.getElementById('project-overlay');
+                const projectDetails = document.getElementById('project-details');
+                const project = projects.find(p => p.id === projectId);
+                currentImageIndex = 0;
+                currentItemId = projectId;
+                <script>
+
+                projectDetails.innerHTML = `
+                    <h2 class="text-2xl font-bold mb-4">${project.title}</h2>
+                    <div class="relative mb-4">
+                        <div id="imageCarousel" class="flex items-center justify-center h-96 rounded-lg overflow-hidden">
+                            <img src="${project.images[currentImageIndex]}" alt="${project.title}" class="max-w-full max-h-full object-contain">
+                        </div>
+                        ${project.images.length > 1 ? `
+                            <button onclick="changeImage(-1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-r">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </button>
+                            <button onclick="changeImage(1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-l">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        ` : ''}
+                    </div>
+                    <div class="mb-4">${project.details}</div>
+                    <button onclick="closeProject()" class="mt-4 bg-accent text-foreground px-4 py-2 rounded-lg hover:bg-primary">Back to Projects</button>
+                `;
+
+                projectOverlay.classList.remove('hidden');
+            }
+
+            function openBlogPost(index) {
+                const blogOverlay = document.getElementById('blog-overlay');
+                const blogDetails = document.getElementById('blog-details');
+                const post = blogPosts[index];
+                currentImageIndex = 0;
+                currentItemId = 'blog' + index;
+
+                blogDetails.innerHTML = `
+                    <h2 class="text-2xl font-bold mb-4">${post.title}</h2>
+                    <div class="relative mb-4">
+                        <div id="imageCarousel" class="flex items-center justify-center h-96 rounded-lg overflow-hidden">
+                            <img src="${post.images[currentImageIndex]}" alt="${post.title}" class="max-w-full max-h-full object-contain">
+                        </div>
+                        ${post.images.length > 1 ? `
+                            <button onclick="changeImage(-1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-r">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </button>
+                            <button onclick="changeImage(1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-l">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        ` : ''}
+                    </div>
+                    <p class="text-muted mb-2">Published on ${post.date}</p>
+                    <div class="mb-4">${post.content}</div>
+                    <button onclick="closeBlogPost()" class="mt-4 bg-accent text-foreground px-4 py-2 rounded-lg hover:bg-primary">Back to Blog</button>
+                `;
+
+                blogOverlay.classList.remove('hidden');
+            }
+
+            function changeImage(direction) {
+                const item = currentItemId.startsWith('blog') 
+                    ? blogPosts[parseInt(currentItemId.slice(4))] 
+                    : projects.find(p => p.id === currentItemId);
+
+                currentImageIndex += direction;
+                if (currentImageIndex < 0) currentImageIndex = item.images.length - 1;
+                if (currentImageIndex >= item.images.length) currentImageIndex = 0;
+
+                const imageCarousel = document.getElementById('imageCarousel');
+                imageCarousel.innerHTML = `
+                    <img src="${item.images[currentImageIndex]}" alt="${item.title}" class="max-w-full max-h-full object-contain">
+                `;
+            }
+
+            function closeProject() {
+                document.getElementById('project-overlay').classList.add('hidden');
+            }
+
+            function closeBlogPost() {
+                document.getElementById('blog-overlay').classList.add('hidden');
+            }
+        </script>
+
+        <section id="contact" class="mb-16">
+            <h2 class="text-2xl font-bold mb-8 text-white text-center">Contact Me</h2>
+            <form id="contact-form" class="bg-secondary p-6 rounded-lg">
+                <div class="mb-4">
+                    <label for="name" class="block text-white mb-2">Name:</label>
+                    <input type="text" id="name" name="name" required class="w-full bg-background text-foreground px-4 py-2 rounded-lg">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-white mb-2">Email:</label>
+                    <input type="email" id="email" name="email" required class="w-full bg-background text-foreground px-4 py-2 rounded-lg">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-white mb-2">Message:</label>
+                    <textarea id="message" name="message" required class="w-full bg-background text-foreground px-4 py-2 rounded-lg"></textarea>
+                </div>
+                <button type="submit" class="bg-accent text-foreground px-4 py-2 rounded-lg hover:bg-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-background text-center py-4">
+        <p class="text-muted">&copy; 2024 Arvin Enkhbold. All rights reserved.</p>
+        <div class="mt-2 space-x-2">
+            <a href="#" aria-label="LinkedIn" class="text-foreground hover:text-accent"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="GitHub" class="text-foreground hover:text-accent"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

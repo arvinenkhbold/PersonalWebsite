@@ -1,0 +1,174 @@
+<html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="Arvin Enkhbold's portfolio showcasing business and data analysis projects">
+                <title>Arvin Enkhbold - Business & Data Analyst Portfolio</title>
+                <script src="https://cdn.tailwindcss.com"></script>
+                <script>
+                    tailwind.config = {
+                        theme: {
+                            extend: {
+                                colors: {
+                                    background: '#1e2638',
+                                    foreground: '#ffffff',
+                                    primary: '#3a5a78',
+                                    secondary: '#2c3649',
+                                    accent: '#4a90e2',
+                                    muted: '#6c7a94',
+                                },
+                                fontFamily: {
+                                    sans: ['Arial', 'sans-serif'],
+                                },
+                            }
+                        }
+                    }
+                </script>
+                <link rel="icon" href="favicon.ico" type="image/x-icon">
+                <link href="/path/to/your/style.css" rel="stylesheet">
+                <link href="/path/to/your/global.css" rel="stylesheet">
+                <style>
+                    .header-container {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 1rem;
+                    }
+                    .header-left {
+                        flex: 1;
+                    }
+                    .header-center {
+                        flex: 1;
+                        text-align: center;
+                    }
+                    .header-right {
+                        flex: 1;
+                        text-align: right;
+                    }
+                    .social-icons {
+                        display: flex;
+                        justify-content: center;
+                        gap: 1rem;
+                        margin-top: 0.5rem;
+                    }
+                    .social-icons svg {
+                        width: 24px;
+                        height: 24px;
+                    }
+                </style>
+            </head>
+            <body class="bg-background text-foreground">
+                <header class="bg-background py-8 px-4 sticky top-0 z-50 shadow-md">
+                    <div class="container mx-auto flex justify-between items-center">
+                        <div class="flex-1">
+                            <a href="index.html" class="text-3xl font-bold text-foreground hover:text-accent">Arvin Enkhbold</a>
+                        </div>
+                        <div class="flex-1 text-center">
+                            <p class="text-xl">Aspiring Analyst</p>
+                            <div class="social-icons flex justify-center space-x-4 mt-2">
+                                <a href="https://www.linkedin.com/in/arvin-enkhbold" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-foreground hover:text-accent">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                        <rect width="4" height="12" x="2" y="9" />
+                                        <circle cx="4" cy="4" r="2" />
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/arvinenkhbold?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="text-foreground hover:text-accent">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                    </svg>
+                                </a>
+                                <a href="https://x.com/ArvinEnkhbold" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="text-foreground hover:text-accent">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                                        <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                                    </svg>
+                                </a>
+                                <a href="https://www.strava.com/athletes/arvin_enkhbold" target="_blank" rel="noopener noreferrer" aria-label="Strava" class="text-foreground hover:text-accent">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex-1 text-right">
+                            <nav>
+                                <ul class="flex justify-end space-x-4">
+                                    <li><a href="index.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Home</a></li>
+                                    <li><a href="resume.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Resume</a></li>
+                                    <li><a href="projects.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Projects</a></li>
+                                    <li><a href="blog.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Blog</a></li>
+                                    <li><a href="contact.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-8 text-center">Contact Me</h1>
+
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Contact Form -->
+            <div class="lg:w-1/2">
+                <form id="contact-form" class="bg-secondary p-6 rounded-lg">
+                    <div class="mb-4">
+                        <label for="name" class="block text-white mb-2">Name:</label>
+                        <input type="text" id="name" name="name" required class="w-full bg-background text-foreground px-4 py-2 rounded-lg">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-white mb-2">Email:</label>
+                        <input type="email" id="email" name="email" required class="w-full bg-background text-foreground px-4 py-2 rounded-lg">
+                    </div>
+                    <div class="mb-4">
+                        <label for="subject" class="block text-white mb-2">Subject:</label>
+                        <input type="text" id="subject" name="subject" required class="w-full bg-background text-foreground px-4 py-2 rounded-lg">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-white mb-2">Message:</label>
+                        <textarea id="message" name="message" required class="w-full bg-background text-foreground px-4 py-2 rounded-lg h-32"></textarea>
+                    </div>
+                    <button type="submit" class="bg-accent text-foreground px-6 py-2 rounded-lg hover:bg-primary transition duration-300">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Information and Map -->
+            <div class="lg:w-1/2">
+                <div class="bg-secondary p-6 rounded-lg mb-8">
+                    <h2 class="text-2xl font-bold mb-4 text-center">Contact Information</h2>
+                    <p class="mb-2"><strong>Email:</strong> <a href="mailto:your.email@example.com" class="text-accent hover:underline">arvinenkhbold6@gmail.com</a></p>
+                    <p class="mb-2"><strong>City:</strong> Alameda, CA 94501</p>
+                    <div class="mt-4 space-x-4">
+                        <a href="https://www.linkedin.com/in/arvin-enkhbold" target="_blank" class="text-accent hover:text-primary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/arvinenkhbold" target="_blank" class="text-accent hover:text-primary"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://x.com/ArvinEnkhbold" target="_blank" class="text-accent hover:text-primary"><i class="fab fa-x"></i> X</a>
+                        <a href="https://www.strava.com/athletes/arvin_enkhbold" target="_blank" class="text-accent hover:text-primary"><i class="fab fa-strava"></i> Strava</a>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embed -->
+                <div class="bg-secondary p-6 rounded-lg">
+                    <h2 class="text-2xl font-bold mb-4 text-center">Location</h2>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50531.51082164623!2d-122.30728815136718!3d37.77938890000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f80d8f2cf1595%3A0x66ff99cf60016f14!2sAlameda%2C%20CA!5e0!3m2!1sen!2sus!4v1684886654968!5m2!1sen!2sus"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Include your existing footer here -->
+    </footer>
+
+    <script>
+        // You can add form submission handling here if needed
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your form submission logic here
+            console.log('Form submitted');
+        });
+    </script>
+</body>
+</html>

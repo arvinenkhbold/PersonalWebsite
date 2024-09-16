@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Arvin Enkhbold's portfolio showcasing business and data analysis projects">
+            <title>Arvin Enkhbold - Business & Data Analyst Portfolio</title>
+            <script src="https://cdn.tailwindcss.com"></script>
+            <script>
+                tailwind.config = {
+                    theme: {
+                        extend: {
+                            colors: {
+                                background: '#1e2638',
+                                foreground: '#ffffff',
+                                primary: '#3a5a78',
+                                secondary: '#2c3649',
+                                accent: '#4a90e2',
+                                muted: '#6c7a94',
+                            },
+                            fontFamily: {
+                                sans: ['Arial', 'sans-serif'],
+                            },
+                        }
+                    }
+                }
+            </script>
+            <link rel="icon" href="favicon.ico" type="image/x-icon">
+            <link href="/path/to/your/style.css" rel="stylesheet">
+            <link href="/path/to/your/global.css" rel="stylesheet">
+            <style>
+                .header-container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem;
+                }
+                .header-left {
+                    flex: 1;
+                }
+                .header-center {
+                    flex: 1;
+                    text-align: center;
+                }
+                .header-right {
+                    flex: 1;
+                    text-align: right;
+                }
+                .social-icons {
+                    display: flex;
+                    justify-content: center;
+                    gap: 1rem;
+                    margin-top: 0.5rem;
+                }
+                .social-icons svg {
+                    width: 24px;
+                    height: 24px;
+                }
+            </style>
+        </head>
+        <body class="bg-background text-foreground">
+            <header class="bg-background py-8 px-4 sticky top-0 z-50 shadow-md">
+                <div class="container mx-auto flex justify-between items-center">
+                    <div class="flex-1">
+                        <a href="index.html" class="text-3xl font-bold text-foreground hover:text-accent">Arvin Enkhbold</a>
+                    </div>
+                    <div class="flex-1 text-center">
+                        <p class="text-xl">Aspiring Analyst</p>
+                        <div class="social-icons flex justify-center space-x-4 mt-2">
+                            <a href="https://www.linkedin.com/in/arvin-enkhbold" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-foreground hover:text-accent">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect width="4" height="12" x="2" y="9" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg>
+                            </a>
+                            <a href="https://github.com/arvinenkhbold?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="text-foreground hover:text-accent">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                            </a>
+                            <a href="https://x.com/ArvinEnkhbold" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="text-foreground hover:text-accent">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                                    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                                </svg>
+                            </a>
+                            <a href="https://www.strava.com/athletes/arvin_enkhbold" target="_blank" rel="noopener noreferrer" aria-label="Strava" class="text-foreground hover:text-accent">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex-1 text-right">
+                        <nav>
+                            <ul class="flex justify-end space-x-4">
+                                <li><a href="index.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Home</a></li>
+                                <li><a href="resume.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Resume</a></li>
+                                <li><a href="projects.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Projects</a></li>
+                                <li><a href="blog.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Blog</a></li>
+                                <li><a href="contact.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-8 text-center">Blog</h1>
+
+        <div class="flex flex-col lg:flex-row">
+            <!-- Main content area -->
+            <div class="lg:w-3/4 lg:pr-8">
+                <!-- Featured/Latest Post -->
+                <article id="featured-post" class="mb-12 bg-secondary p-6 rounded-lg">
+                    <!-- Content will be dynamically inserted here -->
+                </article>
+
+                <!-- Recent Posts -->
+                <h3 class="text-xl font-bold mb-4">Recent Posts</h3>
+                <div id="recent-posts" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Recent posts will be dynamically inserted here -->
+                </div>
+
+                <!-- Pagination -->
+                <div class="mt-8 flex justify-center">
+                    <a href="#" class="bg-accent text-foreground px-4 py-2 rounded-lg mx-2 hover:bg-primary">Previous</a>
+                    <a href="#" class="bg-accent text-foreground px-4 py-2 rounded-lg mx-2 hover:bg-primary">Next</a>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="lg:w-1/4 mt-8 lg:mt-0">
+                <!-- Categories -->
+                <div class="mb-8 bg-secondary p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Categories</h3>
+                    <ul>
+                        <li><a href="#" class="text-accent hover:underline">Data Analysis</a></li>
+                        <li><a href="#" class="text-accent hover:underline">Finance</a></li>
+                        <li><a href="#" class="text-accent hover:underline">Business Strategy</a></li>
+                        <li><a href="#" class="text-accent hover:underline">Tech Trends</a></li>
+                    </ul>
+                </div>
+
+                <!-- Archive -->
+                <div class="mb-8 bg-secondary p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Archive</h3>
+                    <ul>
+                        <li><a href="#" class="text-accent hover:underline">August 2024</a></li>
+                        <li><a href="#" class="text-accent hover:underline">September 2024</a></li>
+                        <!-- Add more months as needed -->
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Blog Post Overlay -->
+    <div id="blog-overlay" class="fixed inset-0 bg-background bg-opacity-90 z-50 hidden overflow-y-auto">
+        <div class="container mx-auto px-4 py-8">
+            <div id="blog-details" class="bg-secondary p-8 rounded-lg shadow-lg relative max-w-4xl mx-auto">
+                <button onclick="closeBlogPost()" class="absolute top-4 right-4 text-white hover:text-accent">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                <!-- Blog post content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Include your existing footer here -->
+    </footer>
+
+    <script>
+        // Sample blog post data (you would typically fetch this from a server or CMS)
+        const blogPosts = [
+            
+            {
+                title: "$SPY $GME $PLTR",
+                date: "September 06, 2024",
+                images: ["images/spy-09-06-24.png", "images/roaring-kitty.jpeg", "images/karp.jpeg"],
+                excerpt: "Today's trading session was marked by high volatility as the market digested critical economic data, including the non-farm payroll numbers ahead of the much-anticipated Federal Open Market Committee (FOMC) meeting on September 18th-19th.",
+                content: `
+                    <p>Today's trading session was marked by high volatility as the market digested critical economic data, including the non-farm payroll numbers ahead of the much-anticipated Federal Open Market Committee (FOMC) meeting on September 18th-19th. The data revealed that the U.S. economy added 142,000 jobs in August, falling short of the expected 161,000. This weaker-than-expected job growth heightened fears of an economic slowdown, prompting speculation about potential interest rate cuts ranging from 25 to 75 basis points.</p>
+
+                    <h3 class="text-xl font-bold mt-4 mb-2">$SPY: Market Under Pressure</h3>
+                    <p>The SPDR S&P 500 ETF ($SPY), a benchmark for the overall market, started the day with an initial pop at 5:30 AM PST, reflecting early optimism. However, this quickly faded as the market opened, leading to a sharp sell-off. By the end of the trading day, $SPY had dropped $9.25, closing significantly lower as investor concerns about economic growth and the Fed decision took center stage. I believe that we will continue to have a volatile market till the decision comes out. Septemeber truly is bear season.</p>
+
+                    <h3 class="text-xl font-bold mt-4 mb-2">$GME: GameStop's Pop Upon Kitty Tweet</h3>
+                    <p>GameStop ($GME), the OG meme stock, defied the broader market trend with a rally. Despite the general downturn in the market, $GME managed to post gains, as investors speculated that Roaring Kitty might be back from his hiding. This rally comes ahead of the company's quarterly earnings release on September 10th, 2024, with an estimated move of (+/-) 23.59%. The company's substantial cash reserves and potential shift from meme stock status to a more traditional investment under the leadership of Ryan Cohen have fueled this. With the upcoming earnings report, all eyes will be on $GME to see if it can continue its upward momentum.</p>
+
+                    <h3 class="text-xl font-bold mt-4 mb-2">$PLTR: Huge day for Palantir and Alex Karp</h3>
+                    <p>Palantir Technologies ($PLTR), one of my favorite companies, had an eventful day. Having been an investor since 2021, I've watched the company grow, fall, and grow again, establishing themselves as a leader in artificial intelligence with real, tangible use cases for major corporations. Today, $PLTR achieved a significant milestone: approval for inclusion in the S&P 500. This long-awaited recognition followed five straight quarters of GAAP profitability and increasing institutional ownership. The announcement led to a after-market pop in $PLTR's stock price. We will see if that pop is sustained or will it cause institutional selloff similar to what we seen with $SMCI.</p>
+                `
+            },
+            {
+                title: "Second Latest Post",
+                date: "May 10, 2024",
+                images: ["path/to/blog2-image1.jpg", "path/to/blog2-image2.jpg"],
+                excerpt: "This is the excerpt for the second latest blog post.",
+                content: "This is the full content of the second latest blog post."
+            },
+            {
+                title: "Third Latest Post",
+                date: "May 5, 2024",
+                images: ["path/to/blog3-image1.jpg", "path/to/blog3-image2.jpg"],
+                excerpt: "This is the excerpt for the third latest blog post.",
+                content: "This is the full content of the third latest blog post."
+            }
+            // Add more blog posts as needed
+        ];
+
+        function displayBlogPosts() {
+            const featuredPost = document.getElementById('featured-post');
+            const recentPosts = document.getElementById('recent-posts');
+
+            // Display the latest post in the featured section
+            featuredPost.innerHTML = `
+                <div onclick="openBlogPost(0)" class="cursor-pointer">
+                    <h2 class="text-2xl font-bold mb-4 text-center">Latest Post: ${blogPosts[0].title}</h2>
+                    <div class="overflow-hidden rounded-lg max-h-400px">
+                        <img src="${blogPosts[0].images[0]}" alt="${blogPosts[0].title}" class="w-full h-auto object-cover">
+                    </div>
+                    <p class="text-muted mb-2">Published on ${blogPosts[0].date}</p>
+                    <p class="mb-4">${blogPosts[0].excerpt}</p>
+                </div>
+            `;
+
+            // Display all posts in the recent posts section, including the latest
+            recentPosts.innerHTML = blogPosts.map((post, index) => `
+                <article onclick="openBlogPost(${index})" class="bg-secondary p-6 rounded-lg cursor-pointer">
+                    <h4 class="text-lg font-bold mb-2 text-center">${post.title}</h4>
+                    <div class="overflow-hidden rounded-lg">
+                        <img src="${post.images[0]}" alt="${post.title}" class="w-full h-48 object-cover">
+                    </div>
+                    <p class="text-muted mb-2">Published on ${post.date}</p>
+                    <p class="mb-4">${post.excerpt}</p>
+                </article>
+            `).join('');
+        }
+
+        let currentImageIndex = 0;
+        let currentPostIndex = 0;
+
+        function openBlogPost(index) {
+            const blogOverlay = document.getElementById('blog-overlay');
+            const blogDetails = document.getElementById('blog-details');
+            const post = blogPosts[index];
+            currentImageIndex = 0;
+            currentPostIndex = index;
+
+            blogDetails.innerHTML = `
+                <h2 class="text-2xl font-bold mb-4">${post.title}</h2>
+                <div class="relative mb-4">
+                    <div id="imageCarousel" class="flex items-center justify-center h-96 rounded-lg overflow-hidden">
+                        <img src="${post.images[currentImageIndex]}" alt="${post.title}" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <button onclick="changeImage(-1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-r">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button onclick="changeImage(1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-l">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+                <p class="text-muted mb-2">Published on ${post.date}</p>
+                <div class="mb-4">${post.content}</div>
+                <button onclick="closeBlogPost()" class="mt-4 bg-accent text-foreground px-4 py-2 rounded-lg hover:bg-primary">Back to Blog</button>
+            `;
+
+            blogOverlay.classList.remove('hidden');
+        }
+
+        function changeImage(direction) {
+            const post = blogPosts[currentPostIndex];
+            currentImageIndex += direction;
+            if (currentImageIndex < 0) currentImageIndex = post.images.length - 1;
+            if (currentImageIndex >= post.images.length) currentImageIndex = 0;
+
+            const imageCarousel = document.getElementById('imageCarousel');
+            imageCarousel.innerHTML = `
+                <img src="${post.images[currentImageIndex]}" alt="${post.title}" class="max-w-full max-h-full object-contain">
+            `;
+        }
+
+        function closeBlogPost() {
+            const blogOverlay = document.getElementById('blog-overlay');
+            blogOverlay.classList.add('hidden');
+        }
+
+        // Call the function when the page loads
+        window.onload = displayBlogPosts;
+    </script>
+</body>
+</html>
