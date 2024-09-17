@@ -1,109 +1,140 @@
 <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <meta name="description" content="Arvin Enkhbold's portfolio showcasing business and data analysis projects">
-                <title>Arvin Enkhbold - Business & Data Analyst Portfolio</title>
-                <script src="https://cdn.tailwindcss.com"></script>
-                <script>
-                    tailwind.config = {
-                        theme: {
-                            extend: {
-                                colors: {
-                                    background: '#1e2638',
-                                    foreground: '#ffffff',
-                                    primary: '#3a5a78',
-                                    secondary: '#2c3649',
-                                    accent: '#4a90e2',
-                                    muted: '#6c7a94',
-                                },
-                                fontFamily: {
-                                    sans: ['Arial', 'sans-serif'],
-                                },
-                            }
-                        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Arvin Enkhbold's portfolio showcasing business and data analysis projects">
+        <title>Arvin Enkhbold - Business & Data Analyst Portfolio</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            background: '#1e2638',
+                            foreground: '#ffffff',
+                            primary: '#3a5a78',
+                            secondary: '#2c3649',
+                            accent: '#4a90e2',
+                            muted: '#6c7a94',
+                        },
+                        fontFamily: {
+                            sans: ['Arial', 'sans-serif'],
+                        },
                     }
-                </script>
-                <link rel="icon" href="favicon.ico" type="image/x-icon">
-                <link href="/path/to/your/style.css" rel="stylesheet">
-                <link href="/path/to/your/global.css" rel="stylesheet">
-                <style>
-                    .header-container {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        padding: 1rem;
-                    }
-                    .header-left {
-                        flex: 1;
-                    }
-                    .header-center {
-                        flex: 1;
-                        text-align: center;
-                    }
-                    .header-right {
-                        flex: 1;
-                        text-align: right;
-                    }
-                    .social-icons {
-                        display: flex;
-                        justify-content: center;
-                        gap: 1rem;
-                        margin-top: 0.5rem;
-                    }
-                    .social-icons svg {
-                        width: 24px;
-                        height: 24px;
-                    }
-                </style>
-            </head>
-            <body class="bg-background text-foreground">
-                <header class="bg-background py-8 px-4 sticky top-0 z-50 shadow-md">
-                    <div class="container mx-auto flex justify-between items-center">
-                        <div class="flex-1">
-                            <a href="index.html" class="text-3xl font-bold text-foreground hover:text-accent">Arvin Enkhbold</a>
-                        </div>
-                        <div class="flex-1 text-center">
-                            <p class="text-xl">Aspiring Analyst</p>
-                            <div class="social-icons flex justify-center space-x-4 mt-2">
-                                <a href="https://www.linkedin.com/in/arvin-enkhbold" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-foreground hover:text-accent">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                                        <rect width="4" height="12" x="2" y="9" />
-                                        <circle cx="4" cy="4" r="2" />
-                                    </svg>
-                                </a>
-                                <a href="https://github.com/arvinenkhbold?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="text-foreground hover:text-accent">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                                    </svg>
-                                </a>
-                                <a href="https://x.com/ArvinEnkhbold" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="text-foreground hover:text-accent">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
-                                        <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
-                                    </svg>
-                                </a>
-                                <a href="https://www.strava.com/athletes/arvin_enkhbold" target="_blank" rel="noopener noreferrer" aria-label="Strava" class="text-foreground hover:text-accent">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="flex-1 text-right">
-                            <nav>
-                                <ul class="flex justify-end space-x-4">
-                                    <li><a href="index.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Home</a></li>
-                                    <li><a href="resume.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Resume</a></li>
-                                    <li><a href="projects.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Projects</a></li>
-                                    <li><a href="blog.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Blog</a></li>
-                                    <li><a href="contact.html" class="bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Contact</a></li>
-                                </ul>
-                            </nav>
+                }
+            }
+        </script>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link href="/path/to/your/style.css" rel="stylesheet">
+        <link href="/path/to/your/global.css" rel="stylesheet">
+        <style>
+            .header-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem;
+            }
+            .header-left {
+                flex: 1;
+            }
+            .header-center {
+                flex: 1;
+                text-align: center;
+            }
+            .header-right {
+                flex: 1;
+                text-align: right;
+            }
+            .social-icons {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                margin-top: 0.5rem;
+            }
+            .social-icons svg {
+                width: 24px;
+                height: 24px;
+            }
+            @media (max-width: 768px) {
+                #mobile-menu {
+                    transition: max-height 0.3s ease-out;
+                    max-height: 0;
+                    overflow: hidden;
+                }
+
+                #mobile-menu.hidden {
+                    max-height: 0;
+                }
+
+                #mobile-menu:not(.hidden) {
+                    max-height: 500px; /* Adjust this value as needed */
+                }
+            }
+        </style>
+    </head>
+    <body class="bg-background text-foreground">
+        <header class="bg-background py-4 px-4 sticky top-0 z-50 shadow-md">
+            <div class="container mx-auto">
+                <div class="flex flex-wrap items-center justify-between">
+                    <!-- Name and Social Icons -->
+                    <div class="flex flex-col items-start">
+                        <a href="index.html" class="text-2xl md:text-3xl font-bold text-foreground hover:text-accent">Arvin Enkhbold</a>
+                        <div class="flex space-x-3 mt-2">
+                            <a href="https://www.linkedin.com/in/arvin-enkhbold" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-foreground hover:text-accent">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect width="4" height="12" x="2" y="9" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg>
+                            </a>
+                            <a href="https://github.com/arvinenkhbold?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="text-foreground hover:text-accent">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                            </a>
+                            <a href="https://x.com/ArvinEnkhbold" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="text-foreground hover:text-accent">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                                    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                                </svg>
+                            </a>
+                            <a href="https://www.strava.com/athletes/arvin_enkhbold" target="_blank" rel="noopener noreferrer" aria-label="Strava" class="text-foreground hover:text-accent">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
-                </header>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-button" class="md:hidden text-foreground hover:text-accent">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Navigation -->
+                    <nav id="mobile-menu" class="hidden md:block w-full md:w-auto mt-4 md:mt-0">
+                        <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
+                            <li><a href="index.html" class="block bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Home</a></li>
+                            <li><a href="resume.html" class="block bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Resume</a></li>
+                            <li><a href="projects.html" class="block bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Projects</a></li>
+                            <li><a href="blog.html" class="block bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Blog</a></li>
+                            <li><a href="contact.html" class="block bg-secondary text-foreground px-4 py-2 rounded-lg hover:bg-accent">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <script>
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        </script>
 
     <main class="container mx-auto px-4 py-8">
         <h1 class="text-3xl font-bold mb-8 text-center">Contact Me</h1>
