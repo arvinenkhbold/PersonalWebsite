@@ -234,7 +234,7 @@
                 <div class="bg-secondary p-6 rounded-lg transition-transform duration-300 hover:scale-105 cursor-pointer" onclick="openBlogPost(1)">
                     <img src="path/to/blog2-image.jpg" alt="Blog Post 2" class="w-full h-48 object-cover rounded-lg mb-4">
                     <h3 class="text-xl font-bold mb-2 text-white text-center">Blog Post 2</h3>
-                    <p class="text-white mb-4">Brief excerpt of the second blog post. This provides a quick overview of the content.</p>
+                    <p class="text-white mb-4">This past week was marked by volatility as investors and market makers braced for the Fed's big decision next Wednesday, September 18th. Despite early-day sell-offs, bulls pushed the S&P 500 up 4% for the week, fueled by investor optimism. The standout days were Wednesday and Thursday, with $SPY covering a week's worth of movement in just two sessions. Major catalysts included Apple's underwhelming 'Glowtime' event and Oracle's impressive earnings, strengthened by their strategic partnership with Amazon Web Services, as well as raising their guidance. Palantir also made waves at their AIPCon, showcasing continued growth and industry disruption.</p>
                 </div>
                 <div class="bg-secondary p-6 rounded-lg transition-transform duration-300 hover:scale-105 cursor-pointer" onclick="openBlogPost(2)">
                     <img src="path/to/blog3-image.jpg" alt="Blog Post 3" class="w-full h-48 object-cover rounded-lg mb-4">
@@ -370,6 +370,21 @@
 
             // Blog post data
             const blogPosts = [
+                 {
+                    title: "September 9th - 13th, Weekly Recap",
+                    date: "September 13, 2024",
+                    images: ["images/blog2-image1.jpg", "images/blog2-image2.jpg", "images/blog2-image3.jpg"],
+                    excerpt: "Brief excerpt of the second blog post. This provides a quick overview of the content.",
+                    content: `
+                        <p>It is evident that we are currently in a very volatile market as investors and market makers gauge the huge fed decision next week on Wednesday, Sept. 18th. The whole week consisted of a sell off early in the day and bulls buying it back up to being green for the day. Ultimately, the S & P rose 4% on the week which was driven by high optimism from investors. The biggest days this week were Wednesday and Thursday where in the 2 day session, $SPY moved the length of an average trading week. Pivoting to certain catalysts, the biggest was Apple’s  ‘Glowtime’ event (we will discuss a bit later),  as well as Oracle’s impressive earnings. $ORCL was particularly impressive due to their strategic partnership with Amazon Web Services, allowing AWS users to access Oracle’s Database, which simplifies deployment of enterprise workload on the cloud. This was followed by their earnings call where they raised their 2026 guidance to $66 billion, topping analyst expectations by $1.5 billion.</p>
+
+                        <h3 class="text-xl font-bold mt-4 mb-2">$APPLE: Glowtime Event</h3>
+                        <p>In my honest opinion, this event and the unveiling of the new iphone was highly disappointing. Apple has really stepped away from the visionary and innovative company that Steve Jobs once built. While they seem focused on improving their ecosystem, which is good, it doesn’t attract new customers and could let competitors catch up. Just recently, we saw Huawei, a Chinese company, release a new phone with a tri-fold screen, showcasing innovation that Apple seems to be lacking. To add to this, Warren Buffet, one of the greatest investors of all time, has begun unloading all of his Apple shares, which could be a signal that he has lost faith in the company’s future direction.</p>
+
+                        <h3 class="text-xl font-bold mt-4 mb-2">$PLTR: AIPCon</h3>
+                        <p>On September 12th, 2024 Palantir held their AIPCon with over 100+ organizations in attendance. This event allows for featured organizations to showcase and demo their use of Palantir’s technology in front of others. Since the start of this convention in 2023, it was really the tipping point that allowed Palantir to pivot from just a government defense company to expanding into the commercial sector. AIPCon highlighted Palantir's continued growth, with disruptions in industries such as healthcare and finance with the use of their technology. One of the most interesting presentations in my opinion was Palantir allowing the business, Associated Materials, to use and deploy their ERP system with more capabilities and less time. For example, an organization that would develop an ERP system across 11 factories would take 5+ years, and Palantir could do that in 9 months.That signaled that ERP system resellers will soon be gone and their clients will look elsewhere.</p>
+                    `
+                },
                 {
                     title: "$SPY $GME $PLTR",
                     date: "September 06, 2024",
@@ -386,16 +401,6 @@
 
                         <h3 class="text-xl font-bold mt-4 mb-2">$PLTR: Huge day day for Palantir and Alex Karp</h3>
                         <p>Palantir Technologies ($PLTR), one of my favorite companies, had an eventful day. Having been an investor since 2021, I've watched the company grow, fall, and grow again, establishing themselves as a leader in artificial intelligence with real, tangible use cases for major corporations. Today, $PLTR achieved a significant milestone: approval for inclusion in the S&P 500. This long-awaited recognition followed five straight quarters of GAAP profitability and increasing institutional ownership. The announcement led to a after-market pop in $PLTR's stock price. We will see if that pop is sustained or will it cause institutional selloff similar to what we seen with $SMCI.</p>
-                    `
-                },
-                {
-                    title: "Blog Post 2",
-                    date: "September 05, 2024",
-                    images: ["images/blog2-image1.jpg", "images/blog2-image2.jpg", "images/blog2-image3.jpg"],
-                    excerpt: "Brief excerpt of the second blog post. This provides a quick overview of the content.",
-                    content: `
-                        <p>Detailed content of the second blog post...</p>
-                        <!-- ... (rest of the content) ... -->
                     `
                 },
                 {
