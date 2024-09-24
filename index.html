@@ -368,6 +368,8 @@
                       </ul>
 
                       <h3 class="text-xl font-bold mb-2">About the Dataset</h3>
+                      <p>This dataset was found on Kaggle and is titled, "US Funds dataset from Yahoo Finance" by Stefano Leone. This set was scraped from Yahoo Finance, which is a public website. It contains 7 different datasets that are related to ETFs and Mutual Funds. Let's dive in to each dataset and I will give a brief description of each one.</p>
+                        <div class="my-8"></div>
                       <ul class="list-disc list-inside mb-4">
                           <li><strong>ETFs:</strong> This dataset contains the daily price data for ETFs, which include the open, high, low, close prices, adjusted close prices, and trading volume.<br></li>
                           <li><strong>ETF Prices:</strong> This dataset contains all the other information about the ETF, that include name, ticker, currency, fund category, and the exchange it's traded on.<br></li>
@@ -377,7 +379,15 @@
                           <li><strong>Mutal Fund Prices (Q-Z):</strong> This dataset contains information about the Mutual Funds Ticker and its NAV (Net Asset Value) per day from the tickers (Q-Z).<br></li>
                           <li><strong>Mutual Funds:</strong> This dataset contains all the other information about the Mutual Fund, that include name, ticker, currency, fund category, and the exchange it's traded on.</li>
                       </ul>
-                        
+
+                      <h3 class="text-xl font-bold mb-2">Future Improvements</h3>
+                       <p class="mb-4">There would be many different processes for analysis that would make the project more effective and the analysis that actually draw valuable insights. Looking at the results, I am definetly not satisfied and will improve in the future. Lets discuss some of them. First I feel like the purpose of the analysis was sufficient and it gave me a clear direction on what insights to pursue withen the dataset. The first batch of improvements I would make was the process of data cleaning, that would have significantly made my analysis easier as the project went on. During the process, I was dealing with 7 different datasets that contained an excess amount of missing values. The missing values were important variables such as 3-10 year performance, fund expenses, sharpe ratio, etc... These were valuable information that would have contributed later onto the analysis especially in the composite scores and the risk-reward tradeoff as expenses and commissions are a major part of investing. For these variables, I dropped the columsn that had an excess that was missing with a tolerance of 100. In the future, I would raise up the tolerance up more to have more flexibility, but even better, I would find the mean or median of that column and fund and insert values instead of dropping them.</p>
+
+                          <p class="mb-4">Probably the biggest mistake that I made, but also easy to implement is sorting the output of the queries in a way that made sense to what I was searching for. For example, in the second basic query that I did (Calculating the daily price range, which is volatility for each ETF), I would have the query display the ETFs with the highest volatility as well as the lowest volatility ones. In my querys I only displayed the head or the tail of the dataset that was sorted by the fund's name in alphabetical order. This definetly made the analysis not effective at all since the displayed ETFs or mutual funds were constrained and didn't take into account the best or worst performers of the query. This would have made significant changes in the output and anlysis as we would have seen a holistic view of the best and worst funds.</p>
+
+                          <p class="mb-4">As breifly discussed earlier, I ran into some troubles with missing values when calculating the composite score. These missing values skewed the composite score a bit and made the score actually not reliable. In the future, I would focus on handling these missing values more effectively. For example, instead of excluding the funds with missing data, I would fill in these values using statistical methods with the mean or median of similar funds within the same category. Additionally, I would include important variables like expense ratios, Sharpe ratios, and long-term performance data withen the composite score that would make a much more accurate depiction of each fund's risk-adjusted returns.</p>
+
+                          <p class="mb-4">In addition to improving on my basic queries, I would also make some more advanced queries that would provide deeper insights into the analysis. For example, some things I could have done were time-specific queries such as looking for specific analysis withen a time frame to see which funds perform the best or the worst in market conditions such as recessions, bull markets, stagnated markets, or even sector specific booms.</p>
                     `
                 }
             ];
