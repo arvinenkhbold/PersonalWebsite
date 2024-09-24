@@ -564,6 +564,31 @@
             let currentItemId = '';
 let currentImageIndex = 0;
 
+function initializeOverlays() {
+    const projectItems = document.querySelectorAll('.project-item');
+    const blogItems = document.querySelectorAll('.blog-item');
+
+    projectItems.forEach(item => {
+        item.addEventListener('click', function() {
+            toggleProject(this.dataset.projectId);
+        });
+    });
+
+    blogItems.forEach((item, index) => {
+        item.addEventListener('click', function() {
+            openBlogPost(index);
+        });
+    });
+
+    const closeButtons = document.querySelectorAll('.close-button');
+    closeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const overlayId = this.closest('.overlay').id;
+            closeOverlay(overlayId);
+        });
+    });
+}
+
 function toggleProject(projectId) {
     const projectOverlay = document.getElementById('project-overlay');
     const projectDetails = document.getElementById('project-details');
@@ -644,16 +669,9 @@ function changeImage(direction) {
     imageCarousel.innerHTML = `<img src="${images[currentImageIndex]}" alt="Image" class="max-w-full max-h-full object-contain">`;
 }
 
-// Add event listeners to close buttons
-document.addEventListener('DOMContentLoaded', function() {
-    const closeButtons = document.querySelectorAll('.close-button');
-    closeButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const overlayId = this.closest('.overlay').id;
-            closeOverlay(overlayId);
-        });
-    });
-});
+// Initialize overlays when the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', initializeOverlays);
+            
                 blogOverlay.classList.remove('hidden');
             }
 
